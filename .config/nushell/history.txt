@@ -58,3 +58,20 @@ edit
 lg
 ls
 cd dotfiles/
+git add .
+git commit -m "add starship toml"
+git push
+git
+gh
+sudo apt update<\n>sudo apt install gh
+sudo apt install gh
+gh
+gh auth login
+starship preset pure-preset -o ~/dotfiles/.config/starship.toml
+ls
+cd dotfiles/
+ll
+starship preset nerd-font-symbols -o ~/dotfiles/.config/starship.toml
+ls
+hello
+add
