@@ -1,0 +1,17 @@
+mv nushell ~/dotfiles/
+ls
+mv nvim ~/dotfiles/
+cd ..
+cd dotfiles/
+ls
+mkdir .config
+mv nushell .config/
+mv nvim/ .config/
+ls
+la
+ls
+stow .
+stow --adopt .
+ls
+stow .
+stow --adopt .
