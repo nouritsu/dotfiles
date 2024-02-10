@@ -143,7 +143,7 @@ let light_theme = {
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
-    show_banner: true # true or false to enable or disable the welcome banner at startup
+    show_banner: false # true or false to enable or disable the welcome banner at startup
 
     ls: {
         use_ls_colors: true # use the LS_COLORS environment variable to colorize output
@@ -209,13 +209,13 @@ $env.config = {
         algorithm: "prefix"    # prefix or fuzzy
         external: {
             enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up may be very slow
-            max_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
+            max_results: 500 # setting it lower can improve completion performance at the cost of omitting some options
             completer: null # check 'carapace_completer' above as an example
         }
     }
 
     filesize: {
-        metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
+        metric: true # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
         format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
     }
 
@@ -760,3 +760,14 @@ $env.config = {
         }
     ]
 }
+
+# User Imports
+use ~/.cache/starship/init.nu
+
+# User Aliases
+alias la = ls -la
+alias ll = ls -l
+
+alias edit = code
+
+alias lg = lazygit

@@ -15,3 +15,46 @@ stow --adopt .
 ls
 stow .
 stow --adopt .
+git add .
+git commit -m "add nvim, nushell"
+ls
+git remote add origin https://github.com/nouritsu/dotfiles.git<\n>git branch -M main<\n>git push -u origin main
+ls
+git push
+ls
+git push
+ls
+curl -sS https://starship.rs/install.sh | sh
+eval $"$(curl -sS https://starship.rs/install.sh | sh)"
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+use ~/.cache/starship/init.nu
+ls
+exit
+cd dotfiles/
+ls
+cd .config/nushell/
+ls
+vim config.nu
+nvim config.nu
+code config.nu
+starship preset gruvbox-rainbow -o ~/.config/starship.toml<\n>
+ls
+ll
+ls
+ls -ltra
+cd .config
+cd
+cd .config
+ls
+mv starship.toml ~/dotfiles/.config/
+cd ~/dotfiles/.config/
+cd ..
+stow --adopt .
+ls
+ll
+edot
+edit
+lg
+ls
+cd dotfiles/
